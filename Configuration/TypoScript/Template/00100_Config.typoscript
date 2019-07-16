@@ -1,0 +1,55 @@
+plugin.tx_powermail {
+    view {
+        templateRootPaths {
+            50 = {$ext.urls.extResources}Private/Templates/
+        }
+        partialRootPaths {
+            50 = {$ext.urls.extResources}Private/Partials/
+        }
+        layoutRootPaths {
+            50 = {$ext.urls.extResources}Private/Layouts/
+        }
+    }
+}
+
+### Add new Field Properties
+config.tx_extbase {
+    persistence {
+        classes {
+            In2code\Powermail\Domain\Model\Form {
+                subclasses {
+                    0 = HauerHeinrich\HhPowermailGdprlink\Domain\Model\Form
+                }
+            }
+            In2code\Powermail\Domain\Model\Page {
+                subclasses {
+                    0 = HauerHeinrich\HhPowermailGdprlink\Domain\Model\Page
+                }
+            }
+            In2code\Powermail\Domain\Model\Field {
+                subclasses {
+                    0 = HauerHeinrich\HhPowermailGdprlink\Domain\Model\Field
+                }
+            }
+            HauerHeinrich\HhPowermailGdprlink\Domain\Model\Form {
+                mapping {
+                    tableName = tx_powermail_domain_model_form
+                }
+            }
+            HauerHeinrich\HhPowermailGdprlink\Domain\Model\Page {
+                mapping {
+                    tableName = tx_powermail_domain_model_page
+                }
+            }
+            HauerHeinrich\HhPowermailGdprlink\Domain\Model\Field {
+                mapping {
+                    tableName = tx_powermail_domain_model_field
+                }
+            }
+        }
+    }
+
+    objects {
+        In2code\Powermail\Domain\Repository\FormRepository.className = HauerHeinrich\HhPowermailGdprlink\Domain\Repository\FormRepository
+    }
+}
