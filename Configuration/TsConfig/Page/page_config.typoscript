@@ -6,7 +6,7 @@ tx_powermail {
                 data_protection = data protection
                 data_protection {
                     ### (0:string, 1:array, 2:date, 3:file)
-                    dataType = 0
+                    dataType = 1
                     export = 1
                 }
             }
