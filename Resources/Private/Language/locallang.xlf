@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-02-08T00:01:00Z" product-name="hh_powermail_gdprlink">
+        <header/>
+        <body>
+
+            <trans-unit id="data_protection_text.label" xml:space="preserve">
+                <source>data protection text</source>
+            </trans-unit>
+
+
+
+            <trans-unit id="data_protection_value.label" xml:space="preserve">
+                <source>data protection</source>
+            </trans-unit>
+
+            <trans-unit id="data_protection_value.description" xml:space="preserve">
+                <source>(e. g. "yes" or "true" or "this is ok")</source>
+            </trans-unit>
+
+            <trans-unit id="data_protection_value.default" xml:space="preserve">
+                <source>accepted</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

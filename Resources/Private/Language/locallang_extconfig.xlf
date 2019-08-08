@@ -4,9 +4,9 @@
         <header/>
         <body>
 
-        <trans-unit id="rtePresetsPath" xml:space="preserve">
-            <source>RTE yaml config path</source>
-        </trans-unit>
+            <trans-unit id="rtePresetsPath" xml:space="preserve">
+                <source>RTE yaml config path</source>
+            </trans-unit>
 
         </body>
     </file>

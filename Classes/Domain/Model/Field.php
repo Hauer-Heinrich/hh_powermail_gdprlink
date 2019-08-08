@@ -22,6 +22,13 @@ class Field extends \In2code\Powermail\Domain\Model\Field {
     protected $dataProtectionText;
 
     /**
+     * dataProtectionValue
+     *
+     * @var string $dataProtectionValue
+     */
+    protected $dataProtectionValue;
+
+    /**
      * @param string $dataProtectionAccepted
      * @return void
      */
@@ -53,5 +60,22 @@ class Field extends \In2code\Powermail\Domain\Model\Field {
     public function getDataProtectionText()
     {
         return $this->dataProtectionText;
+    }
+
+    /**
+     * @param string $dataProtectionValue
+     * @return void
+     */
+    public function setDataProtectionValue($dataProtectionValue)
+    {
+        $this->dataProtectionValue = $dataProtectionValue;
+    }
+
+    /**
+     * @return string $dataProtectionValue
+     */
+    public function getDataProtectionValue()
+    {
+        return $this->dataProtectionValue;
     }
 }

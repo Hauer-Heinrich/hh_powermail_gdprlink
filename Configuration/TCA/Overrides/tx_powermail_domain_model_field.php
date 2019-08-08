@@ -5,7 +5,7 @@
 $tempColumns = [
     'data_protection_text' => [
         'exclude' => 1,
-        'label' => 'DSGVO data protection text',
+        'label' => 'LLL:EXT:hh_powermail_gdprlink/Resources/Private/Language/locallang.xlf:data_protection_text.label',
         'config' => [
             'type' => 'text',
             'enableRichtext' => true,
@@ -17,6 +17,16 @@ $tempColumns = [
             ],
             'cols' => 40,
             'rows' => 15,
+            'eval' => 'trim',
+        ]
+    ],
+    'data_protection_value' => [
+        'label' => 'LLL:EXT:hh_powermail_gdprlink/Resources/Private/Language/locallang.xlf:data_protection_value.label',
+        'description' => 'LLL:EXT:hh_powermail_gdprlink/Resources/Private/Language/locallang.xlf:data_protection_value.description',
+        'config' => [
+            'type' => 'input',
+            'size' => 30,
+            'max' => 255,
             'eval' => 'trim',
         ]
     ],
@@ -32,6 +42,7 @@ $GLOBALS['TCA']['tx_powermail_domain_model_field']['types']['data_protection'] =
         title,
         type,
         data_protection_text,
+        data_protection_value,
         --div--;LLL:EXT:powermail/Resources/Private/Language/locallang_db.xlf:tx_powermail_domain_model_field.sheet1,
             mandatory,
             --palette--;Layout;43,

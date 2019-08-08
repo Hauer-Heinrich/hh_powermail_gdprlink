@@ -7,7 +7,7 @@
     <div class="{settings.styles.framework.fieldWrappingClasses}">
         <f:form.checkbox
             property="{field.marker}."
-            value="data protection accepted"
+            value="<f:if condition='{field.dataProtectionValue}'><f:then>{field.dataProtectionValue}</f:then><f:else>{f:translate(key: 'LLL:EXT:hh_powermail_gdprlink/Resources/Private/Language/locallang.xlf:data_protection_value.default')}</f:else></f:if>"
             checked=""
             id="powermail_field_{field.marker}"
             additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field)}"
